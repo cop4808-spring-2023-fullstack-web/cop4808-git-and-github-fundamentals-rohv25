@@ -55,15 +55,15 @@ button {
 }
 
 .operator {
-    background-color: #b5c520;    
+    background-color: coral;
 }
 
 .operator:focus {
-    background-color: #dcf029;
+    background-color: rgb(255, 85, 24);
 }
 
 .equals {
-    background-color: #FF8F1F;
+    background-color: rgb(243, 164, 61);
 }
 
 .equals:active {
@@ -108,4 +108,44 @@ button {
 
 .percent:active {
     background-color: rgb(123, 189, 255);
+}
+
+.pi {
+    font-weight: bold;
+    background-color: rgb(197, 102, 57);
+}
+
+.pi:active {
+    font-weight: bold;
+    background-color: rgb(236, 123, 70);
+}
+
+.e {
+    font-weight: bold;
+    background-color: rgb(101, 197, 57);
+}
+
+.e:active {
+    font-weight: bold;
+    background-color: rgb(124, 238, 71);
+}
+
+.squareroot {
+    font-weight: bold;
+    background-color: rgb(57, 71, 197);
+}
+
+.squareroot:active {
+    font-weight: bold;
+    background-color: rgb(70, 86, 235);
+}
+
+.square {
+    font-weight: bold;
+    background-color: rgb(185, 57, 197);
+}
+
+.square:active {
+    font-weight: bold;
+    background-color: rgb(218, 68, 231);
 }
