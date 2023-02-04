@@ -37,16 +37,16 @@ function clickButton() {
             } else if(buttons[i].classList.contains('decimal')) {
                 inputDecimal(buttons[i].value);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('square')) {                   //IMPLEMENT
+            } else if(buttons[i].classList.contains('square')) {                   //Square handler
                 inputSquare(displayValue);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('squareroot')) {
+            } else if(buttons[i].classList.contains('squareroot')) {                   //Squareroot handler
                 inputSquareroot(displayValue);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('e')) {
+            } else if(buttons[i].classList.contains('e')) {                   //E handler
                 inputE(displayValue);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('pi')) {
+            } else if(buttons[i].classList.contains('pi')) {                   //Pi handler
                 inputPi(displayValue);
                 updateDisplay();
             } else if(buttons[i].classList.contains('percent')) {
@@ -197,18 +197,18 @@ function roundAccurately(num, places) {
     return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
 }
 
-function inputSquare(num) {
+function inputSquare(num) {                   //Square function
     displayValue = num * num;
 }
 
-function inputSquareroot(num) {
+function inputSquareroot(num) {                   //Squareroot function
     displayValue = Math.sqrt(num);
 }
 
-function inputE() {
+function inputE() {                   //E function
     displayValue = e;
 }
 
-function inputPi() {
+function inputPi() {                   //Pi function
     displayValue = pi;
 }

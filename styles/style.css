@@ -22,7 +22,7 @@ html {
     grid-template-columns: repeat(4, 120px);
     grid-template-rows: minmax(100px, auto) repeat(5, 80px);
     gap: 2px;
-    height: 650px;
+    height: 640px;
 }
 
 #display {
