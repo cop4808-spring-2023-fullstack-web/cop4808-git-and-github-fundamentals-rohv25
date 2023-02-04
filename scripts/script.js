@@ -4,6 +4,8 @@ let secondOperand = null;
 let firstOperator = null;
 let secondOperator = null;
 let result = null;
+const e = 2.718;
+const pi = 3.14
 const buttons = document.querySelectorAll('button');
 
 window.addEventListener('keydown', function(e){
@@ -35,6 +37,18 @@ function clickButton() {
             } else if(buttons[i].classList.contains('decimal')) {
                 inputDecimal(buttons[i].value);
                 updateDisplay();
+            } else if(buttons[i].classList.contains('square')) {                   //IMPLEMENT
+                inputSquare(displayValue);
+                updateDisplay();
+            } else if(buttons[i].classList.contains('squareroot')) {
+                inputSquareroot(displayValue);
+                updateDisplay();
+            } else if(buttons[i].classList.contains('e')) {
+                inputE(displayValue);
+                updateDisplay();
+            } else if(buttons[i].classList.contains('pi')) {
+                inputPi(displayValue);
+                updateDisplay();
             } else if(buttons[i].classList.contains('percent')) {
                 inputPercent(displayValue);
                 updateDisplay();
@@ -44,7 +58,7 @@ function clickButton() {
             } else if(buttons[i].classList.contains('clear'))
                 clearDisplay();
                 updateDisplay();
-        }
+            }
     )}
 }
 
@@ -181,4 +195,20 @@ function operate(x, y, op) {
 
 function roundAccurately(num, places) {
     return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
+}
+
+function inputSquare(num) {
+    displayValue = num * num;
+}
+
+function inputSquareroot(num) {
+    displayValue = Math.sqrt(num);
+}
+
+function inputE() {
+    displayValue = e;
+}
+
+function inputPi() {
+    displayValue = pi;
 }
