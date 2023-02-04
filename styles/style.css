@@ -19,9 +19,10 @@ html {
     border: 10px solid rgba(47,47,47,1);
     border-radius: 4px;
     display: grid;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(4, 120px);
     grid-template-rows: minmax(100px, auto) repeat(5, 80px);
     gap: 2px;
+    height: 650px;
 }
 
 #display {
@@ -54,11 +55,11 @@ button {
 }
 
 .operator {
-    background-color: #FF8F1F;    
+    background-color: #b5c520;    
 }
 
 .operator:focus {
-    background-color: #ffc183;
+    background-color: #dcf029;
 }
 
 .equals {
@@ -70,19 +71,19 @@ button {
 }
 
 .operand {
-    background-color: #217C7E;
+    background-color: #517474;
 }
 
 .operand:active {
-    background-color: #33b9bb;
+    background-color: #75a7a7;
 }
 
 .decimal {
-    background-color: #217C7E;
+    background-color: dodgerblue;
 }
 
 .decimal:active {
-    background-color: #33b9bb;
+    background-color: rgb(123, 189, 255);
 }
 
 .clear {
